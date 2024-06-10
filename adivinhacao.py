@@ -12,7 +12,7 @@ numero_secreto = 10
 
 # inicio do loop
 
-while(total_de_tentativas > 0):
+while(rodada <= total_de_tentativas):
  
   print("Rodada {} de {} tentativas" .format(rodada, total_de_tentativas))
 
@@ -36,7 +36,6 @@ while(total_de_tentativas > 0):
     print("Você errou! O seu chute foi menor que o número secreto.\n")
 
   rodada += 1	
-  total_de_tentativas -= 1
 
 #fim do loop
 
