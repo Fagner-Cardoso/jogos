@@ -17,14 +17,19 @@ print("O número digitado foi:", chute)
 # variáveis de estado do jogo
 
 venceu = chute == numero_secreto
+maior = chute > numero_secreto
+menor = chute < numero_secreto
+
+# condicional do jogo
 
 if(venceu):
  print("Parabéns! Você acertou.\n")
-else:
- print("Que pena! Você errou.\n")
+elif(maior):
+ print("Você errou! O seu chute foi maior que o número secreto.\n")
+elif(menor):
+ print("Você errou! O seu chute foi menor que o número secreto.\n")
 
 
-print("Número secreto:", numero_secreto)
 
 # texto final
 print("Fim de jogo.") 
